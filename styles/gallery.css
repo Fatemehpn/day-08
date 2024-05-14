@@ -238,6 +238,9 @@ a.site-name {
         /* grid-template-rows: auto auto; */
 
         /* grid-template-rows: 10rem 300px auto; */
+
+        gap: 1rem;
+        justify-content: center;
     }
 
     .photo-gallery img {
@@ -252,6 +255,8 @@ a.site-name {
     }
 
     .large-image img {
+        object-fit: cover;
+        object-position: left bottom;
     }
 
     .info-box {
