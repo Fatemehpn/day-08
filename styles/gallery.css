@@ -213,7 +213,13 @@ a.site-name {
         display: grid;
 
         /* Create 3 columns, 300px ide each */
-        grid-template-columns: 18.75rem 18.75rem 18.75rem;
+        /* grid-template-columns: 18.75rem 18.75rem 18.75rem; */
+
+        /* Create 4 columns, 200px wide each */
+        grid-template-columns: repeat(4, 12.5rem);
+
+        /* make all automatically generated rows 200px each */
+        grid-auto-rows: 12.5rem;
 
         /* Create 3 columns of equal width to fill the grid container */
         /* grid-template-columns: 1fr 1fr 1fr; */
@@ -229,7 +235,9 @@ a.site-name {
 
         /* Set all row heights based on content inside the grid items */
         /* This is the default value */
-        grid-template-rows: auto auto;
+        /* grid-template-rows: auto auto; */
+
+        /* grid-template-rows: 10rem 300px auto; */
     }
 
     .photo-gallery img {
